@@ -1,0 +1,12 @@
+#!/bin/bash
+
+outdir=/z/int/muscle_benchmark2/bbs
+mkdir -p $outdir
+
+for bb_acc in `cat ../accs/balibase`
+do
+	bbs_acc=`echo $bb_acc | sed "-es/BB/BBS/"`
+	echo bbs_acc=$bbs_acc bb_acc=$bb_acc
+	mkdir -p $outdir/$bbs_acc
+	./trim_bb_to_bbs.py $bb_acc $outdir/$bbs_acc
+done

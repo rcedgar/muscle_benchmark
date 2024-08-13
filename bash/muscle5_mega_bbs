@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd /z/int/muscle_benchmark2/bbs
+
+outdir=../muscle5_mega_bbs
+mkdir -p $outdir
+
+for acc in `cat $res/muscle_benchmark/accs/bbs`
+do
+	echo === $acc ===
+	out=../muscle5_mega_bbs/$acc
+	if [ -s $out ] ; then
+		continue
+	fi
+	muscle -align ../bbs_megas/$acc.mega -output $out
+done

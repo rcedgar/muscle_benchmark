@@ -1,0 +1,31 @@
+#!/bin/bash
+
+bench=$1
+algo=muscle5_mega2
+
+if [ x$bench == x ] ; then
+	echo Missing arg
+	exit 1
+fi
+
+rootdir=/z/int/muscle_benchmark/
+rootdir2=/z/int/muscle_benchmark2/
+outdir=$rootdir2/qscores
+mkdir -p $outdir
+
+if [ ! -d $megasdir ] ; then
+	echo Not found megasdir=$megasdir
+	exit 1
+fi
+
+testdir=$rootdir2/output_msas/$bench/$algo
+refdir=$rootdir/ref_msas/$bench
+
+accs=$res/muscle_benchmark/accs/$bench
+
+muscle \
+  -qscoredir $accs \
+  -testdir $testdir \
+  -refdir $refdir \
+  -bysequence \
+  -output $outdir/$bench/muscle5_mega2

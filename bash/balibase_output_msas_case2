@@ -1,0 +1,28 @@
+#!/bin/bash -e
+
+algo=$1
+
+if [ x$algo == x ] ; then
+	echo Missing arg
+	exit 1
+fi
+
+indir=$z/int/muscle_benchmark/output_msas/balibase/$algo
+casedir=$z/int/muscle_benchmark2/balibase_refcase
+
+if [ ! -d $indir ] ; then
+	echo Not found indir=$indir
+	exit 1
+fi
+
+outdir=$z/int/muscle_benchmark2/balibase_output_msas_case/$algo
+mkdir -p $outdir
+
+for acc in `cat ../accs/balibase`
+do
+	echo $acc
+	fasta_transfercase2.py \
+	  $casedir/$acc \
+	  $indir/$acc \
+	    > $outdir/$acc
+done

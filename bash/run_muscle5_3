@@ -1,0 +1,37 @@
+#!/bin/bash
+
+bench=$1
+algo=muscle5_3
+
+if [ x$bench == x ] ; then
+	echo Missing arg
+	exit 1
+fi
+
+root_dir=/z/int/muscle_benchmark/
+root_dir2=/z/int/muscle_benchmark2/
+
+input_dir=$root_dir/input_fastas/$bench
+
+if [ ! -d $input_dir ] ; then
+	echo Not found input_dir=$input_dir
+	exit 1
+fi
+
+out_dir=$root_dir2/output_msas/$bench/$algo
+mkdir -p $out_dir
+
+for acc in `cat $res/muscle_benchmark/accs/$bench`
+do
+	echo $acc
+	fa=$input_dir/$acc
+	if [ ! -s $fa ] ; then
+		echo Not found fa=$fa
+		exit 1
+	fi
+
+	muscle \
+	  -muscle3 $fa \
+	  -quiet \
+	  -output $out_dir/$acc
+done

@@ -1,0 +1,17 @@
+for bench in balibase homstrad balifam100
+do
+	for algo in `cat ../bench_algos/$bench`
+	do
+		echo $bench $algo
+		./msta_scores_bench_algo $bench $algo
+	done
+done
+
+for bench in balifam1000 balifam10000
+do
+	for algo in `cat ../bench_algos/$bench`
+	do
+		echo $bench $algo
+		./msta_scores_bench_algo_seqs $bench $algo
+	done
+done

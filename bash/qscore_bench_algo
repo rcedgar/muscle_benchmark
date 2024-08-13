@@ -1,0 +1,43 @@
+#!/bin/bash -e
+
+bench=$1
+algo=$2
+
+mb=/z/int/muscle_benchmark
+mb2=/z/int/muscle_benchmark2
+
+accs=../accs/$bench
+testdir=$mb/output_msas/$bench/$algo
+refdir=$mb/ref_msas/$bench
+outdir=$mb2/qscores/$bench
+
+if [ ! -s $accs ] ; then
+	echo Not found accs=$accs >> /dev/stderr
+	exit 1
+fi
+
+if [ ! -d $testdir ] ; then
+	echo Not found testdir=$testdir >> /dev/stderr
+	exit 1
+fi
+
+if [ ! -d $refdir ] ; then
+	echo Not found refdir=$refdir >> /dev/stderr
+	exit 1
+fi
+
+out=$outdir/$algo
+
+if [ -s $out ] ; then
+	echo "Already done $out"
+	exit 0
+fi
+
+mkdir -p $outdir
+
+muscle \
+  -qscoredir $accs \
+  -testdir $testdir \
+  -refdir $refdir \
+  -bysequence \
+  -output $out

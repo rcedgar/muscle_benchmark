@@ -1,0 +1,292 @@
+
+ERROR: Two substring matches
+
+ERROR: Two substring matches
+
+ERROR: Two substring matches
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40001'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40002'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40003'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40004'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40005'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40006'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40008'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40009'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40010'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40011'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40012'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40013'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40014'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40015'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40016'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40017'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40018'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40019'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40021'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40022'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40023'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40024'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40025'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40026'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40027'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40028'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40029'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40030'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40031'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40033'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40034'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40035'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40036'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40037'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40038'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40039'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40040'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40041'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40042'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40043'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40044'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40045'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40046'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40047'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40048'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS40049'
+Traceback (most recent call last):
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 101, in <module>
+    bbs_labels, bbs_rows, bbs_seqs = read_fasta(bbs_ref_msa_fn)
+  File "/z/a/res/muscle_benchmark/scripts/./trim_bb_to_bbs.py", line 75, in read_fasta
+    for line in open(fn):
+FileNotFoundError: [Errno 2] No such file or directory: '/z/a/res/balibase/ref/BBS50004'
+
+ERROR: Two substring matches
+
+ERROR: Two substring matches

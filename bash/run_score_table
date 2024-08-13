@@ -1,0 +1,3 @@
+./score_table.py > ../results/score_table.tsv
+
+ls -lh ../results/score_table.tsv

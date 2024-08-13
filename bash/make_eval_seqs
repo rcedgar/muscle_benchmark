@@ -1,0 +1,37 @@
+#!/bin/bash -e
+
+bench=$1
+
+if [ x$bench == x ] ; then
+	echo Missing arg >> /dev/stderr
+	exit 1
+fi
+
+mb=/z/int/muscle_benchmark
+mb2=/z/int/muscle_benchmark2
+
+fadir=$mb/input_fastas/$bench
+outdir=$mb2/eval_seqs/$bench
+accs=$res/muscle_benchmark/accs/$bench
+
+if [ ! -d $fadir ] ; then
+	echo Not found fadir=$fadir >> /dev/stderr
+	exit 1
+fi
+
+mkdir -p $outdir
+
+for acc in `cat $accs`
+do
+	echo $bench $acc
+	infa=$fadir/$acc
+	if [ ! -s $infa ] ; then
+		echo Not found infa=$infa >> /dev/stderr
+		exit 1
+	fi
+	usearch \
+	  -fastx_subsample $infa \
+	  -sample_size 100 \
+	  -quiet \
+	  -fastaout $outdir/$acc
+done

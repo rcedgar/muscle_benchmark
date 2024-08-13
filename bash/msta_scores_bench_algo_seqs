@@ -1,0 +1,44 @@
+#!/bin/bash -e
+
+bench=$1
+algo=$2
+
+if [ x$algo == x ] ; then
+	echo Missing arg
+	exit 1
+fi
+
+testdir=$z/int/muscle_benchmark/output_msas/$bench/$algo
+seqsdir=$z/int/muscle_benchmark2/eval_seqs/$bench
+
+if [ ! -d $testdir ] ; then
+	echo Not found testdir=$testdir
+	exit 1
+fi
+
+if [ ! -d $seqsdir ] ; then
+	echo Not found seqsdir=$seqsdir
+	exit 1
+fi
+
+outdir=$z/int/muscle_benchmark2/msta_scores/$bench
+logdir=$z/int/muscle_benchmark2/msta_log/$bench
+
+mkdir -p $outdir $logdir
+
+out=$outdir/$algo
+
+if [ -s $out ] ; then
+	echo "Already done $out"
+	exit 0
+fi
+
+reseek \
+  -msta_scores $z/a/res/muscle_benchmark/accs/$bench \
+  -input $z/int/muscle_benchmark2/bca/$bench.bca \
+  -seqsdir $seqsdir \
+  -testdir $testdir \
+  -output $out \
+  -log $logdir/$algo
+
+ls -lh $outdir/$algo

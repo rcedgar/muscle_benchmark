@@ -1,0 +1,37 @@
+#!/bin/bash -e
+
+acc=$1
+
+if [ x$acc == x ] ; then
+	echo Missing arg >> /dev/stdout
+	exit 1
+fi
+
+mb=/z/int/muscle_benchmark2
+
+accs=$res/muscle_benchmark/accs/bbs
+testdir=$mb/muscle5_mega_bbs
+refdir=$mb/ref_msas_bbs
+
+if [ ! -s $accs ] ; then
+	echo Not found accs=$accs >> /dev/stderr
+	exit 1
+fi
+
+if [ ! -d $testdir ] ; then
+	echo Not found testdir=$testdir >> /dev/stderr
+	exit 1
+fi
+
+if [ ! -d $refdir ] ; then
+	echo Not found refdir=$refdir >> /dev/stderr
+	exit 1
+fi
+
+testmsa=$testdir/$acc
+refmsa=$refdir/$acc
+
+muscle \
+  -qscore $testmsa \
+  -ref $refmsa \
+  -bysequence

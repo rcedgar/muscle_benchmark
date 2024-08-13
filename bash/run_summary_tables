@@ -1,0 +1,7 @@
+for bench in balibase homstrad
+do
+	for metric in tc z z15 lddt_fm lddt_mu
+	do
+		./run_summary_table1 $bench $metric ../accs/$bench
+	done
+done

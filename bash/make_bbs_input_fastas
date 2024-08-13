@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+root_dir=/z/int/muscle_benchmark2
+
+mkdir -p $root_dir/bbs_input_fastas
+
+for acc in `cat $res/muscle_benchmark/accs/bbs`
+do
+	cd $root_dir/bbs/$acc
+	reseek -convert $acc.files -fasta $root_dir/bbs_input_fastas/$acc
+done

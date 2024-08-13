@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+bench=$1
+
+for algo in `cat ../bench_algos/$bench`
+do
+	./msa2lddt_bench_algo $bench $algo
+done

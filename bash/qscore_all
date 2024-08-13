@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+for bench in balibase homstrad
+do
+	algos=../bench_algos/$bench
+	if [ ! -s $algos ] ; then
+		echo Not found algos=$algos >> /dev/stderr
+		exit 1
+	fi
+
+	for algo in `cat $algos`
+	do
+		echo === $bench $algo ===
+		./qscore_bench_algo $bench $algo
+	done
+done

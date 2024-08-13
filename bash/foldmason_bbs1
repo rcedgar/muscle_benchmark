@@ -1,0 +1,41 @@
+#!/bin/bash -e
+
+bbs_acc=$1
+
+if [ x$bbs_acc == x ] ; then
+	echo Missing arg >> /dev/stderr
+	exit 1
+fi
+
+rm -rf /tmp/foldmason_*
+
+root_dir=/z/int/muscle_benchmark2/
+
+cd /z/int/muscle_benchmark2/bbs/$bbs_acc
+
+pdb_dir=/tmp/foldmason_pdb_$RANDOM.$$
+tmp_dir=/tmp/foldmason_tmp_$RANDOM.$$
+raw_dir=$root_dir/foldmason_bbs_raw
+output_prefix=$root_dir/foldmason_bbs_raw/$bbs_acc
+out_dir=$root_dir/foldmason_bbs
+output_msa=$out_dir/$bbs_acc
+
+mkdir -p $pdb_dir
+mkdir -p $tmp_dir
+mkdir -p $raw_dir
+mkdir -p $out_dir
+
+for pdb in `cat $bbs_acc.files`
+do
+	cp -v $pdb $pdb_dir
+done
+
+foldmason easy-msa \
+  $pdb_dir \
+  $output_prefix \
+  $tmp_dir
+
+cp -v ${output_prefix}_aa.fa $out_dir/$bbs_acc
+
+rm -rf $pdb_dir
+rm -rf $tmp_dir

@@ -1,0 +1,28 @@
+#!/bin/bash -e
+
+bench=$1
+
+if [ x$bench == x ] ; then
+	echo Missing arg
+	exit 1
+fi
+
+root_dir=/z/int/muscle_benchmark/
+root_dir2=/z/int/muscle_benchmark2/
+
+files_dir=$root_dir/list_files/$bench
+
+if [ ! -d $files ] ; then
+	echo Not found files=$files
+	exit 1
+fi
+
+out_dir=$root_dir2/megas/$bench
+mkdir -p $out_dir
+
+cd $root_dir
+
+for acc in `cat $res/muscle_benchmark/accs/$bench`
+do
+	reseek -pdb2mega $files_dir/$acc.files -output $out_dir/$acc.mega
+done

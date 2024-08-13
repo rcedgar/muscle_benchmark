@@ -1,0 +1,17 @@
+#!/bin/bash -e
+
+bench=$1
+
+algos=../bench_algos/$1
+
+if [ ! -s ../bench_algos/$1 ] ; then
+	echo Not found algos=$algos >> /dev/stderr
+	exit 1
+fi
+
+for algo in `cat $algos`
+do
+	./qscore_bench_algo $bench $algo
+done
+
+ls -lh ../qscore/$bench.*

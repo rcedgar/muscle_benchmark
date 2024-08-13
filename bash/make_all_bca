@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+indir=/z/int/muscle_benchmark2/all_files
+outdir=/z/int/muscle_benchmark2/bca
+mkdir -p $outdir
+
+cd /z/int/muscle_benchmark
+
+for x in `ls $indir`
+do
+	echo === $x ===
+	y=`echo $x | sed "-es/.files//"`
+	reseek -convert $indir/$x -bca $outdir/$y.bca -minchainlength 10
+done
+
+ls -lh $outdir

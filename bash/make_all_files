@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+indir=/z/int/muscle_benchmark/list_files
+outdir=/z/int/muscle_benchmark2/all_files
+mkdir -p $outdir
+
+for x in `ls $indir`
+do
+	echo $x
+	cat $indir/$x/*.files \
+	  | sort \
+	  | uniq > $outdir/$x.files
+done
+
+ls -lh $outdir

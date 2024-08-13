@@ -1,0 +1,41 @@
+#!/bin/bash
+
+bench=$1
+algo=muscle5_mega2
+
+if [ x$bench == x ] ; then
+	echo Missing arg
+	exit 1
+fi
+
+root_dir=/z/int/muscle_benchmark/
+root_dir2=/z/int/muscle_benchmark2/
+
+megas_dir=$root_dir2/megas/$bench
+
+if [ ! -d $megas_dir ] ; then
+	echo Not found megas_dir=$megas_dir
+	exit 1
+fi
+
+out_dir=$root_dir2/output_msas/$bench/$algo
+mkdir -p $out_dir
+
+accs=$res/muscle_benchmark/accs/$bench
+N=`cat $accs | wc -l`
+n=0
+for acc in `cat $accs`
+do
+	n=$((n+1))
+	echo $n/$N $acc
+	mega=$megas_dir/$acc.mega
+	if [ ! -s $mega ] ; then
+		echo Not found mega=$mega
+		exit 1
+	fi
+
+	muscle \
+	  -align $mega \
+	  -quiet \
+	  -output $out_dir/$acc
+done

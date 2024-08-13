@@ -1,0 +1,33 @@
+#!/bin/bash -e
+
+bench=$1
+algo=$2
+acc=$3
+
+if [ x$acc == x ] ; then
+	echo $0: missing arg $*
+	exit 1
+fi
+
+msa=$z/int/muscle_benchmark/output_msas/$bench/$algo/$acc
+files=$z/int/muscle_benchmark/list_files/$bench/$acc.files
+
+if [ ! -s $msa ] ; then
+	echo Not found msa=$msa
+	exit 1
+fi
+
+if [ ! -s $files ] ; then
+	echo Not found files=$files
+	exit 1
+fi
+
+cd $z/int/muscle_benchmark
+
+outdir=$z/int/muscle_benchmark2/msa2lddt/$bench/$algo
+mkdir -p $outdir
+
+$res/muscle_benchmark/scripts/msa2lddt $msa $files \
+  > $outdir/$acc
+
+ls -lh $outdir/$acc
