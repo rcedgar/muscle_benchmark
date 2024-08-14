@@ -1,0 +1,51 @@
+balibase (full, 197 MSAs)
+z	n	method
+21.4191	197	usalign
+20.1783	106	mustang (incomplete)
+19.9604	197	muscle5_mega
+19.5348	89	matt (incomplete)
+17.4568	197	foldmason_def
+16.6571	197	foldmason_iter
+16.6491	197	muscle5
+15.7800	197	clustalo
+15.2815	197	upp2
+13.9420	197	mafft
+1.8658	197	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+usalign	better-than	muscle5	176	21	0	1.02e-23
+usalign	better-than	mafft	182	15	0	2.68e-29
+usalign	better-than	muscle3	197	0	0	4.46e-34
+usalign	better-than	muscle5_mega	162	35	0	3.78e-14
+usalign	better-than	foldmason_def	179	18	0	1.21e-25
+usalign	better-than	upp2	177	20	0	4.98e-26
+usalign	better-than	foldmason_iter	181	16	0	8.06e-28
+usalign	better-than	clustalo	180	17	0	9.53e-26
+muscle5	better-than	mafft	172	25	0	1.24e-26
+muscle5	better-than	muscle3	196	1	0	4.53e-34
+muscle5_mega	better-than	muscle5	183	14	0	7.83e-32
+muscle5	(unresolved)	foldmason_def	108	89	0	0.938
+muscle5	better-than	upp2	137	60	0	1.25e-11
+muscle5	better-than	foldmason_iter	126	71	0	0.0139
+muscle5	better-than	clustalo	131	66	0	3.45e-08
+mafft	better-than	muscle3	196	1	0	4.88e-34
+muscle5_mega	better-than	mafft	191	6	0	8.46e-34
+foldmason_def	better-than	mafft	145	52	0	1.11e-15
+upp2	better-than	mafft	140	57	0	6.83e-11
+foldmason_iter	better-than	mafft	123	74	0	8.85e-07
+clustalo	better-than	mafft	158	39	0	8.69e-19
+muscle5_mega	better-than	muscle3	197	0	0	4.46e-34
+foldmason_def	better-than	muscle3	197	0	0	4.46e-34
+upp2	better-than	muscle3	195	2	0	5.44e-34
+foldmason_iter	better-than	muscle3	197	0	0	4.46e-34
+clustalo	better-than	muscle3	197	0	0	4.46e-34
+muscle5_mega	better-than	foldmason_def	174	23	0	6.85e-27
+muscle5_mega	better-than	upp2	186	11	0	9.62e-33
+muscle5_mega	better-than	foldmason_iter	177	20	0	2.39e-29
+muscle5_mega	better-than	clustalo	184	13	0	7.27e-32
+foldmason_def	better-than	upp2	109	88	0	7.69e-05
+foldmason_def	better-than	foldmason_iter	174	19	4	1.97e-27
+foldmason_def	better-than	clustalo	103	94	0	0.00655
+upp2	(unresolved)	foldmason_iter	100	97	0	0.235
+clustalo	better-than	upp2	112	85	0	0.0217
+clustalo	(unresolved)	foldmason_iter	107	90	0	0.838

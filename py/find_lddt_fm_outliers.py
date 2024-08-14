@@ -4,12 +4,15 @@ import sys
 
 fn = "../results/score_table.tsv"
 
-'''
-	   0         1        2       3        4       5        6        7         8
-   bench    method      acc      tc        z     z15  lddt_mu  lddt_fm  msa2lddt
-balibase  clustalo  BB11001  0.9123    5.483   3.396   0.7120   0.6435    0.6229
-balibase  clustalo  BB11002  0.0000   -0.536   1.193   0.6013   0.2209    0.1897
-'''
+# make dict from tab-separated fields name=value
+def line2dict(line):
+	flds = line.strip().split('\t')
+	d = {}
+	for fld in flds:
+		flds2 = fld.split('=')
+		if len(flds2) == 2:
+			d[flds2[0]] = flds2[1]
+	return d
 
 lines = []
 fms = []
@@ -18,19 +21,19 @@ diffs = []
 idx2diff = {}
 idx = 0
 for line in open(fn):
-	flds = line[:-1].split('\t')
-	try:
-		mu = float(flds[6])
-		fm = float(flds[8])
-	except:
+	d = line2dict(line)
+	mu = d.get("lddt_mu")
+	fm = d.get("lddt_mf")
+	if mu is None or fm is None:
 		continue
-	lines.append(line[:-1])
 	diff = mu - fm
 	mus.append(mu)
 	fms.append(fm)
 	diffs.append(diff)
 	idx2diff[idx] = diff
 	idx += 1
+n = len(diffs)
+sys.stderr.write("%d pairs\n" % n)
 	
 def get_value(x):
 	return x[1]

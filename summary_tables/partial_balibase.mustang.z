@@ -1,0 +1,23 @@
+balibase (vs. mustang)
+z	method
+20.7261	106	usalign
+20.1783	106	mustang
+18.3613	106	muscle5_mega
+16.5371	106	foldmason_def
+15.8432	106	foldmason_iter
+14.3434	106	muscle5
+13.0558	106	clustalo
+12.2937	106	upp2
+10.7871	106	mafft
+-0.7738	106	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+mustang	better-than	muscle5	105	1	0	4.11e-19
+mustang	better-than	muscle5_mega	96	10	0	1.17e-15
+mustang	better-than	mafft	106	0	0	3.99e-19
+mustang	better-than	foldmason_def	104	2	0	1.35e-18
+mustang	better-than	clustalo	106	0	0	3.99e-19
+mustang	better-than	upp2	105	1	0	4.11e-19
+usalign	better-than	mustang	75	31	0	8.48e-05
+mustang	better-than	muscle3	106	0	0	3.99e-19
+mustang	better-than	foldmason_iter	103	3	0	6.47e-19

@@ -1,0 +1,23 @@
+balibase (vs. mustang)
+lddt_mu	method
+0.7316	106	usalign
+0.7314	106	mustang
+0.7008	106	muscle5_mega
+0.6877	106	foldmason_def
+0.6852	106	foldmason_iter
+0.6651	106	muscle5
+0.6468	106	clustalo
+0.6380	106	upp2
+0.6289	106	mafft
+0.4655	106	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+mustang	better-than	mafft	106	0	0	3.99e-19
+mustang	better-than	muscle5	105	1	0	4.11e-19
+mustang	better-than	muscle3	106	0	0	3.99e-19
+mustang	better-than	foldmason_iter	99	7	0	9.57e-17
+usalign	better-than	mustang	65	41	0	0.0457
+mustang	better-than	upp2	104	2	0	5.46e-19
+mustang	better-than	clustalo	105	1	0	9.89e-19
+mustang	better-than	foldmason_def	99	7	0	3.66e-16
+mustang	better-than	muscle5_mega	92	14	0	9.27e-15

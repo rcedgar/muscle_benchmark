@@ -34,7 +34,7 @@ if [ -s $out ] ; then
 fi
 
 reseek \
-  -msta_scores $z/a/res/muscle_benchmark/accs/$bench \
+  -msta_scores $src/muscle_benchmark/accs/$bench \
   -input $z/int/muscle_benchmark2/bca/$bench.bca \
   -seqsdir $seqsdir \
   -testdir $testdir \

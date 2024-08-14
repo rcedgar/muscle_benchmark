@@ -4,9 +4,11 @@ import sys
 from os import listdir
 from os.path import isfile, join
 
+f = open("../results/score_table.tsv", "w")
+
 int_dir = "/z/int/muscle_benchmark/"
 int_dir2 = "/z/int/muscle_benchmark2/"
-res_dir = "/z/a/res/muscle_benchmark/"
+res_dir = "/mnt/c/src/muscle_benchmark/"
 bench_algos_dir = res_dir + "bench_algos/"
 accs_dir = res_dir + "accs/"
 qscores_dir = int_dir2 + "qscores/"
@@ -38,7 +40,10 @@ def read_qscores(b, algo):
 			continue
 		flds = line.strip().split("\t")
 		acc = flds[0].replace("set=", "")
-		tc = float(flds[2][3:])
+		if flds[1] == "NOMATCH":
+			tc = 0
+		else:
+			tc = float(flds[2][3:])
 		acc2tc[acc] = tc
 	return acc2tc
 
@@ -119,7 +124,7 @@ for b in bs:
 			s += "\ttc=" + stc
 			s += "\tz=" + sz 
 			s += "\tlddt_mu=" + slddt_mu
-			print(s)
+			f.write(s + "\n")
 
 		for metric in metrics:
 			if metric == "tc" and b.startswith("balifam"):
@@ -129,4 +134,5 @@ for b in bs:
 			s += "\talgo=" + algo
 			s += "\tnr_na=" + str(metric_to_NA_count[metric])
 			s += "\tnr_ok=" + str(metric_to_OK_count[metric])
-			print(s)
+			f.write(s + "\n")
+f.close()

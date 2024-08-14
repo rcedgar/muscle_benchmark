@@ -1,0 +1,20 @@
+homstrad (full, 1030 MSAs)
+z	n	method
+22.7880	1030	usalign
+21.5591	1029	mustang (incomplete)
+21.4267	1030	foldmason_def
+21.3523	1030	foldmason_iter
+19.9464	1030	muscle5_mega
+16.2158	1027	muscle5 (incomplete)
+15.8872	1027	clustalo (incomplete)
+15.4794	1027	mafft (incomplete)
+14.1996	398	upp2 (incomplete)
+12.0406	1027	muscle3 (incomplete)
+
+method1	compares	method2	gt	lt	tie	P
+foldmason_iter	better-than	muscle5_mega	720	254	56	3.34e-48
+usalign	better-than	foldmason_iter	613	69	348	7.15e-93
+foldmason_def	better-than	foldmason_iter	209	116	705	6.97e-07
+usalign	better-than	muscle5_mega	960	34	36	6.56e-152
+foldmason_def	better-than	muscle5_mega	730	247	53	9.95e-55
+usalign	better-than	foldmason_def	598	76	356	2.65e-91

@@ -11,7 +11,7 @@ fi
 
 mkdir -p ../summary_tables
 
-./summary_table.py $bench $metric $accs_fn \
+../py/summary_table.py $bench $metric $accs_fn \
   > ../summary_tables/$bench.$metric
 
 ls -lh ../summary_tables/$bench.$metric

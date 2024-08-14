@@ -1,0 +1,23 @@
+homstrad (vs. upp2)
+lddt_mu	method
+0.7845	398	usalign
+0.7731	398	mustang
+0.7476	398	foldmason_iter
+0.7463	398	foldmason_def
+0.7382	398	muscle5_mega
+0.7155	398	muscle5
+0.7105	398	mafft
+0.7099	398	clustalo
+0.6993	398	upp2
+0.6683	398	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+mustang	better-than	upp2	368	27	3	1.3e-60
+usalign	better-than	upp2	384	12	2	9.37e-65
+muscle5	better-than	upp2	275	118	5	4.16e-20
+clustalo	better-than	upp2	249	141	8	4.22e-09
+mafft	better-than	upp2	252	139	7	6.75e-13
+foldmason_iter	better-than	upp2	326	71	1	1.21e-46
+foldmason_def	better-than	upp2	320	77	1	6.24e-45
+upp2	better-than	muscle3	280	114	4	1.65e-27
+muscle5_mega	better-than	upp2	303	95	0	9.04e-34

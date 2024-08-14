@@ -1,0 +1,51 @@
+balibase (full, 197 MSAs)
+tc	n	method
+0.6761	106	mustang (incomplete)
+0.6680	89	matt (incomplete)
+0.6522	197	muscle5_mega
+0.6060	197	muscle5
+0.5770	197	clustalo
+0.5492	197	upp2
+0.5328	197	foldmason_def
+0.5255	197	foldmason_iter
+0.5113	197	usalign
+0.5081	197	mafft
+0.1095	197	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+foldmason_def	better-than	foldmason_iter	85	20	92	1.2e-06
+clustalo	better-than	foldmason_iter	115	62	20	0.000529
+muscle5	better-than	foldmason_iter	135	43	19	9.68e-09
+foldmason_iter	better-than	muscle3	168	1	28	1.78e-29
+mafft	(unresolved)	foldmason_iter	84	84	29	0.496
+muscle5_mega	better-than	foldmason_iter	159	21	17	2.11e-20
+upp2	better-than	foldmason_iter	112	60	25	0.0124
+usalign	(unresolved)	foldmason_iter	104	61	32	0.33
+clustalo	better-than	foldmason_def	114	63	20	0.00356
+muscle5	better-than	foldmason_def	130	44	23	5.13e-08
+foldmason_def	better-than	muscle3	168	2	27	1.26e-29
+foldmason_def	(unresolved)	mafft	89	78	30	0.085
+muscle5_mega	better-than	foldmason_def	156	22	19	4.45e-20
+upp2	(unresolved)	foldmason_def	104	63	30	0.0751
+usalign	(unresolved)	foldmason_def	100	67	30	0.514
+muscle5	better-than	clustalo	113	57	27	0.000106
+clustalo	better-than	muscle3	170	2	25	1.21e-29
+clustalo	better-than	mafft	122	48	27	5.43e-08
+muscle5_mega	better-than	clustalo	126	48	23	2.06e-10
+clustalo	better-than	upp2	104	60	33	0.00562
+clustalo	(unresolved)	usalign	91	83	23	0.085
+muscle5	better-than	muscle3	174	0	23	2.64e-30
+muscle5	better-than	mafft	145	24	28	1.1e-18
+muscle5_mega	better-than	muscle5	107	65	25	5.22e-05
+muscle5	better-than	upp2	133	36	28	2.97e-11
+muscle5	better-than	usalign	112	65	20	2.7e-05
+mafft	better-than	muscle3	163	0	34	1.69e-28
+muscle5_mega	better-than	muscle3	180	1	16	1.91e-31
+upp2	better-than	muscle3	165	3	29	2.84e-29
+usalign	better-than	muscle3	152	9	36	2.3e-27
+muscle5_mega	better-than	mafft	154	27	16	2.25e-20
+upp2	better-than	mafft	105	53	39	0.000145
+usalign	(unresolved)	mafft	101	73	23	0.196
+muscle5_mega	better-than	upp2	141	37	19	9.15e-16
+muscle5_mega	better-than	usalign	137	38	22	4.92e-14
+usalign	(unresolved)	upp2	94	80	23	0.726

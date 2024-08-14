@@ -1,0 +1,1 @@
+../py/combined_table.py | tee ../results/combined_table.txt

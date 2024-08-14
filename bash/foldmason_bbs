@@ -1,6 +1,0 @@
-#!/bin/bash -e
-
-for x in `cat ../accs/bbs`
-do
-	./foldmason_bbs1 $x
-done

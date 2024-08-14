@@ -7,7 +7,7 @@ outdir=$z/int/muscle_benchmark2/msta_balibase_core
 mkdir -p $outdir
 
 reseek \
-  -msta_scores $z/a/res/muscle_benchmark/accs/balibase \
+  -msta_scores ../accs/balibase \
   -input $z/int/muscle_benchmark2/bca/balibase.bca \
   -testdir $z/int/muscle_benchmark2/balibase_output_msas_case/$algo \
   -mixedcasecolok \

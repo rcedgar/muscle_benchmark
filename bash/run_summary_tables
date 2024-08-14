@@ -1,7 +1,8 @@
-for bench in balibase homstrad
+for bench in balibase homstrad balifam100 balifam1000 balifam10000
 do
-	for metric in tc z z15 lddt_fm lddt_mu
+	for metric in tc z lddt_mu
 	do
+		echo $bench $metric
 		./run_summary_table1 $bench $metric ../accs/$bench
 	done
 done

@@ -1,0 +1,8 @@
+# ./run_partial_summary_table balibase tc mustang
+
+for metric in tc z lddt_mu
+do
+	./run_partial_summary_table balibase $metric mustang
+	./run_partial_summary_table balibase $metric matt
+	./run_partial_summary_table homstrad $metric upp2
+done

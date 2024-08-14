@@ -1,0 +1,23 @@
+homstrad (vs. upp2)
+z	method
+21.5994	398	usalign
+20.5053	398	mustang
+18.8163	398	muscle5_mega
+18.6275	398	foldmason_def
+18.5044	398	foldmason_iter
+15.9143	398	muscle5
+15.5072	398	clustalo
+15.3308	398	mafft
+14.1996	398	upp2
+11.0746	398	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+clustalo	better-than	upp2	266	111	21	2.24e-15
+usalign	better-than	upp2	376	13	9	1.7e-63
+muscle5_mega	better-than	upp2	309	84	5	1.27e-41
+muscle5	better-than	upp2	280	105	13	1.35e-23
+foldmason_def	better-than	upp2	295	93	10	2.73e-39
+mafft	better-than	upp2	260	108	30	1.22e-16
+upp2	better-than	muscle3	260	117	21	1.02e-24
+foldmason_iter	better-than	upp2	280	109	9	6.91e-35
+mustang	better-than	upp2	360	29	9	4.28e-60

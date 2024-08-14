@@ -1,0 +1,23 @@
+balibase (vs. matt)
+tc	method
+0.6709	89	muscle5_mega
+0.6680	89	matt
+0.6050	89	usalign
+0.5980	89	muscle5
+0.5761	89	foldmason_iter
+0.5750	89	foldmason_def
+0.5353	89	clustalo
+0.5260	89	upp2
+0.4907	89	mafft
+0.1500	89	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+matt	better-than	foldmason_iter	66	15	8	3.25e-08
+matt	better-than	clustalo	66	16	7	3.37e-07
+matt	better-than	muscle3	81	1	7	6.36e-15
+matt	better-than	muscle5	51	28	10	0.00231
+matt	better-than	mafft	71	10	8	6.16e-09
+matt	better-than	upp2	65	15	9	4.62e-08
+matt	better-than	foldmason_def	63	18	8	4.78e-08
+matt	(unresolved)	muscle5_mega	41	38	10	0.835
+matt	better-than	usalign	58	16	15	3.82e-07
