@@ -9,7 +9,6 @@
         clustalo    0.5770   15.7800    0.6725
             upp2    0.5492   15.2815    0.6644
            mafft    0.5081   13.9420    0.6589
-         muscle3    0.1095    1.8658    0.4887
 balibase incomplete:  matt(89) mustang(106)
 
 === homstrad (1030) ===
@@ -22,7 +21,6 @@ balibase incomplete:  matt(89) mustang(106)
          muscle5    0.8022   16.2158    0.7133
         clustalo    0.7942   15.8872    0.7098
            mafft    0.7858   15.4794    0.7068
-         muscle3    0.7234   12.0406    0.6743
 homstrad incomplete:  upp2(398)
 
 === balifam100 (59) ===
@@ -31,7 +29,6 @@ homstrad incomplete:  upp2(398)
          muscle5   10.7326    0.6559
    foldmason_def    8.5094    0.6124
             upp2    9.6636    0.5895
-         muscle3   -0.9473    0.4250
 
 === balifam1000 (10) ===
           Method         z   lddt_mu
@@ -40,7 +37,6 @@ homstrad incomplete:  upp2(398)
         clustalo    5.7024    0.6183
            mafft    4.1883    0.5769
    foldmason_def    3.7485    0.5069
-         muscle3   -3.1533    0.3727
 
 === balifam10000 (4) ===
           Method         z   lddt_mu

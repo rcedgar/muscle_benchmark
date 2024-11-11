@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+mkdir -p ../summary_tables
+for metric in tc z lddt_mu
+do
+	echo $bench $metric
+	../py/summary_table.py homstrad $metric ../accs/homstrad_ge4 \
+	  > ../summary_tables/homstrad_ge4.$metric
+done

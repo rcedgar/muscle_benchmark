@@ -1,50 +1,63 @@
 homstrad (full, 1030 MSAs)
 tc	n	method
 0.8651	1030	usalign
-0.8644	1030	foldmason_iter
-0.8635	1030	foldmason_def
+0.8644	1030	foldmason-i
+0.8635	1030	foldmason
 0.8625	1030	mustang
-0.8591	1030	muscle5_mega
-0.8022	1030	muscle5
+0.8591	1030	muscle-3d
+0.8022	1030	muscle-aa
 0.7942	1030	clustalo
 0.7858	1030	mafft
-0.7234	1030	muscle3
 0.6652	401	upp2 (incomplete)
 
 method1	compares	method2	gt	lt	tie	P
-foldmason_iter	better-than	clustalo	650	242	138	3.47e-58
-muscle5_mega	better-than	clustalo	659	261	110	2.8e-59
-usalign	better-than	clustalo	668	259	103	1.76e-47
-mustang	better-than	clustalo	644	291	95	8.18e-44
-clustalo	(unresolved)	muscle5	445	415	170	0.2
-foldmason_def	better-than	clustalo	648	247	135	9.32e-58
-clustalo	better-than	muscle3	656	164	210	4.26e-77
-clustalo	better-than	mafft	522	342	166	4.28e-09
-foldmason_iter	better-than	muscle5_mega	517	379	134	0.000128
-usalign	better-than	foldmason_iter	326	283	421	0.00845
-foldmason_iter	(unresolved)	mustang	503	404	123	0.511
-foldmason_iter	better-than	muscle5	659	255	116	6.74e-57
-foldmason_def	(unresolved)	foldmason_iter	155	122	753	0.858
-foldmason_iter	better-than	muscle3	760	140	130	3.38e-111
-foldmason_iter	better-than	mafft	706	204	120	3.86e-72
-usalign	better-than	muscle5_mega	572	356	102	6.44e-08
-mustang	better-than	muscle5_mega	512	427	91	0.00147
-muscle5_mega	better-than	muscle5	670	215	145	6.94e-68
-foldmason_def	better-than	muscle5_mega	517	388	125	0.000621
-muscle5_mega	better-than	muscle3	750	162	118	2.9e-113
-muscle5_mega	better-than	mafft	705	205	120	5.12e-78
+usalign	better-than	foldmason-i	326	283	421	0.00845
+usalign	better-than	foldmason	321	274	435	0.00452
+foldmason	(unresolved)	foldmason-i	155	122	753	0.858
 usalign	better-than	mustang	528	366	136	0.000553
-usalign	better-than	muscle5	685	262	83	1.13e-45
-usalign	better-than	foldmason_def	321	274	435	0.00452
-usalign	better-than	muscle3	751	189	90	2.31e-87
+foldmason-i	(unresolved)	mustang	503	404	123	0.511
+foldmason	(unresolved)	mustang	500	409	121	0.595
+usalign	better-than	muscle-3d	572	356	102	6.44e-08
+foldmason-i	better-than	muscle-3d	517	379	134	0.000128
+foldmason	better-than	muscle-3d	517	388	125	0.000621
+mustang	better-than	muscle-3d	512	427	91	0.00147
+usalign	better-than	muscle-aa	685	262	83	1.13e-45
+foldmason-i	better-than	muscle-aa	659	255	116	6.74e-57
+foldmason	better-than	muscle-aa	663	252	115	1.75e-55
+mustang	better-than	muscle-aa	651	288	91	9.77e-43
+muscle-3d	better-than	muscle-aa	670	215	145	6.94e-68
+usalign	better-than	clustalo	668	259	103	1.76e-47
+foldmason-i	better-than	clustalo	650	242	138	3.47e-58
+foldmason	better-than	clustalo	648	247	135	9.32e-58
+mustang	better-than	clustalo	644	291	95	8.18e-44
+muscle-3d	better-than	clustalo	659	261	110	2.8e-59
+clustalo	(unresolved)	muscle-aa	445	415	170	0.2
 usalign	better-than	mafft	705	238	87	4.78e-55
-mustang	better-than	muscle5	651	288	91	9.77e-43
-foldmason_def	(unresolved)	mustang	500	409	121	0.595
-mustang	better-than	muscle3	732	208	90	6.83e-86
+foldmason-i	better-than	mafft	706	204	120	3.86e-72
+foldmason	better-than	mafft	705	207	118	9.44e-71
 mustang	better-than	mafft	682	259	89	1.09e-55
-foldmason_def	better-than	muscle5	663	252	115	1.75e-55
-muscle5	better-than	muscle3	656	209	165	3.91e-78
-muscle5	better-than	mafft	542	259	229	5.96e-24
-foldmason_def	better-than	muscle3	753	140	137	9.05e-110
-foldmason_def	better-than	mafft	705	207	118	9.44e-71
-mafft	better-than	muscle3	594	241	195	4.83e-55
+muscle-3d	better-than	mafft	705	205	120	5.12e-78
+muscle-aa	better-than	mafft	542	259	229	5.96e-24
+clustalo	better-than	mafft	522	342	166	4.28e-09
+
+
+   homstrad       tc      usalign  foldmason-i    foldmason      mustang    muscle-3d    muscle-aa     clustalo        mafft
+    usalign   0.8651                   >0.0085      >0.0045     >0.00055     >6.4e-08     >1.1e-45     >1.8e-47     >4.8e-55
+foldmason-i   0.8644      <0.0085                     ~0.86        ~0.51     >0.00013     >6.7e-57     >3.5e-58     >3.9e-72
+  foldmason   0.8635      <0.0045        ~0.86                      ~0.6     >0.00062     >1.8e-55     >9.3e-58     >9.4e-71
+    mustang   0.8625     <0.00055        ~0.51         ~0.6                   >0.0015     >9.8e-43     >8.2e-44     >1.1e-55
+  muscle-3d   0.8591     <6.4e-08     <0.00013     <0.00062      <0.0015                  >6.9e-68     >2.8e-59     >5.1e-78
+  muscle-aa   0.8022     <1.1e-45     <6.7e-57     <1.8e-55     <9.8e-43     <6.9e-68                      ~0.2       >6e-24
+   clustalo   0.7942     <1.8e-47     <3.5e-58     <9.3e-58     <8.2e-44     <2.8e-59         ~0.2                  >4.3e-09
+      mafft   0.7858     <4.8e-55     <3.9e-72     <9.4e-71     <1.1e-55     <5.1e-78       <6e-24     <4.3e-09             
+
+
+homstrad	tc	usalign	foldmason-i	foldmason	mustang	muscle-3d	muscle-aa	clustalo	mafft
+usalign	0.8651		>0.0085	>0.0045	>0.00055	>6.4e-08	>1.1e-45	>1.8e-47	>4.8e-55
+foldmason-i	0.8644	<0.0085		~0.86	~0.51	>0.00013	>6.7e-57	>3.5e-58	>3.9e-72
+foldmason	0.8635	<0.0045	~0.86		~0.6	>0.00062	>1.8e-55	>9.3e-58	>9.4e-71
+mustang	0.8625	<0.00055	~0.51	~0.6		>0.0015	>9.8e-43	>8.2e-44	>1.1e-55
+muscle-3d	0.8591	<6.4e-08	<0.00013	<0.00062	<0.0015		>6.9e-68	>2.8e-59	>5.1e-78
+muscle-aa	0.8022	<1.1e-45	<6.7e-57	<1.8e-55	<9.8e-43	<6.9e-68		~0.2	>6e-24
+clustalo	0.7942	<1.8e-47	<3.5e-58	<9.3e-58	<8.2e-44	<2.8e-59	~0.2		>4.3e-09
+mafft	0.7858	<4.8e-55	<3.9e-72	<9.4e-71	<1.1e-55	<5.1e-78	<6e-24	<4.3e-09	

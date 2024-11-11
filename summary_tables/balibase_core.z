@@ -1,0 +1,51 @@
+balibase (full, 197 MSAs)
+z	n	method
+5.9746	197	muscle-3d
+5.9439	197	ref
+5.7626	197	usalign
+5.6993	197	muscle-aa
+5.4875	197	foldmason
+5.4518	197	clustalo
+5.4297	197	upp2
+5.2825	197	mafft
+
+method1	compares	method2	gt	lt	tie	P
+ref	(unresolved)	muscle-3d	113	78	6	0.103
+usalign	(unresolved)	muscle-3d	99	98	0	0.25
+ref	better-than	usalign	114	81	2	0.00805
+muscle-3d	better-than	muscle-aa	152	44	1	1.9e-17
+ref	better-than	muscle-aa	155	39	3	2.25e-14
+usalign	better-than	muscle-aa	128	69	0	2.32e-05
+muscle-3d	better-than	foldmason	177	20	0	2.63e-26
+ref	better-than	foldmason	180	17	0	5.31e-24
+usalign	better-than	foldmason	155	42	0	4.61e-13
+muscle-aa	better-than	foldmason	146	51	0	7.39e-09
+muscle-3d	better-than	clustalo	173	21	3	7.7e-26
+ref	better-than	clustalo	168	23	6	2.04e-24
+usalign	better-than	clustalo	151	46	0	6.39e-10
+muscle-aa	better-than	clustalo	146	49	2	1.52e-15
+clustalo	(unresolved)	foldmason	122	75	0	0.0973
+muscle-3d	better-than	upp2	174	22	1	3.05e-27
+ref	better-than	upp2	171	22	4	6.07e-26
+usalign	better-than	upp2	148	48	1	2.94e-10
+muscle-aa	better-than	upp2	153	42	2	1.07e-16
+upp2	(unresolved)	foldmason	114	83	0	0.35
+clustalo	(unresolved)	upp2	99	96	2	0.727
+muscle-3d	better-than	mafft	180	16	1	1.21e-28
+ref	better-than	mafft	178	17	2	3.8e-27
+usalign	better-than	mafft	149	46	2	6.37e-12
+muscle-aa	better-than	mafft	162	32	3	2.25e-22
+mafft	(unresolved)	foldmason	102	95	0	0.125
+clustalo	better-than	mafft	127	68	2	5.42e-07
+upp2	better-than	mafft	127	65	5	7.03e-06
+
+
+   balibase        z    muscle-3d          ref      usalign    muscle-aa    foldmason     clustalo         upp2        mafft
+  muscle-3d   5.9746                      ~0.1        ~0.25     >1.9e-17     >2.6e-26     >7.7e-26       >3e-27     >1.2e-28
+        ref   5.9439         ~0.1                   >0.0081     >2.2e-14     >5.3e-24       >2e-24     >6.1e-26     >3.8e-27
+    usalign   5.7626        ~0.25      <0.0081                  >2.3e-05     >4.6e-13     >6.4e-10     >2.9e-10     >6.4e-12
+  muscle-aa   5.6993     <1.9e-17     <2.2e-14     <2.3e-05                  >7.4e-09     >1.5e-15     >1.1e-16     >2.2e-22
+  foldmason   5.4875     <2.6e-26     <5.3e-24     <4.6e-13     <7.4e-09                    ~0.097        ~0.35        ~0.12
+   clustalo   5.4518     <7.7e-26       <2e-24     <6.4e-10     <1.5e-15       ~0.097                     ~0.73     >5.4e-07
+       upp2   5.4297       <3e-27     <6.1e-26     <2.9e-10     <1.1e-16        ~0.35        ~0.73                    >7e-06
+      mafft   5.2825     <1.2e-28     <3.8e-27     <6.4e-12     <2.2e-22        ~0.12     <5.4e-07       <7e-06             

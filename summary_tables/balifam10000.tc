@@ -2,3 +2,9 @@ balifam10000 (full, 4 MSAs)
 tc	n	method
 
 method1	compares	method2	gt	lt	tie	P
+
+
+balifam1000       tc
+
+
+balifam10000	tc

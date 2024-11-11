@@ -1,25 +1,35 @@
 balifam1000 (full, 10 MSAs)
 lddt_mu	n	method
-0.6696	10	muscle5_mega
-0.6254	10	muscle5
+0.6696	10	muscle-3d
+0.6254	10	muscle-aa
 0.6183	10	clustalo
 0.5769	10	mafft
-0.5069	10	foldmason_def
-0.3727	10	muscle3
+0.5069	10	foldmason
 
 method1	compares	method2	gt	lt	tie	P
-clustalo	better-than	muscle3	10	0	0	0.00195
+muscle-3d	better-than	muscle-aa	10	0	0	0.00195
+muscle-3d	better-than	clustalo	10	0	0	0.00195
+muscle-aa	(unresolved)	clustalo	6	4	0	0.557
+muscle-3d	better-than	mafft	10	0	0	0.00195
+muscle-aa	better-than	mafft	10	0	0	0.00195
 clustalo	better-than	mafft	7	3	0	0.0273
-clustalo	better-than	foldmason_def	7	3	0	0.0273
-muscle5_mega	better-than	clustalo	10	0	0	0.00195
-muscle5	(unresolved)	clustalo	6	4	0	0.557
-mafft	better-than	muscle3	10	0	0	0.00195
-foldmason_def	better-than	muscle3	9	1	0	0.00977
-muscle5_mega	better-than	muscle3	10	0	0	0.00195
-muscle5	better-than	muscle3	10	0	0	0.00195
-mafft	(unresolved)	foldmason_def	7	3	0	0.131
-muscle5_mega	better-than	mafft	10	0	0	0.00195
-muscle5	better-than	mafft	10	0	0	0.00195
-muscle5_mega	better-than	foldmason_def	10	0	0	0.00195
-muscle5	better-than	foldmason_def	9	1	0	0.00586
-muscle5_mega	better-than	muscle5	10	0	0	0.00195
+muscle-3d	better-than	foldmason	10	0	0	0.00195
+muscle-aa	better-than	foldmason	9	1	0	0.00586
+clustalo	better-than	foldmason	7	3	0	0.0273
+mafft	(unresolved)	foldmason	7	3	0	0.131
+
+
+balifam1000  lddt_mu    muscle-3d    muscle-aa     clustalo        mafft    foldmason
+  muscle-3d   0.6696                    >0.002       >0.002       >0.002       >0.002
+  muscle-aa   0.6254       <0.002                     ~0.56       >0.002      >0.0059
+   clustalo   0.6183       <0.002        ~0.56                    >0.027       >0.027
+      mafft   0.5769       <0.002       <0.002       <0.027                     ~0.13
+  foldmason   0.5069       <0.002      <0.0059       <0.027        ~0.13             
+
+
+balifam1000	lddt_mu	muscle-3d	muscle-aa	clustalo	mafft	foldmason
+muscle-3d	0.6696		>0.002	>0.002	>0.002	>0.002
+muscle-aa	0.6254	<0.002		~0.56	>0.002	>0.0059
+clustalo	0.6183	<0.002	~0.56		>0.027	>0.027
+mafft	0.5769	<0.002	<0.002	<0.027		~0.13
+foldmason	0.5069	<0.002	<0.0059	<0.027	~0.13	

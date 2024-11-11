@@ -1,20 +1,63 @@
 homstrad (full, 1030 MSAs)
 lddt_mu	n	method
 0.7878	1030	usalign
-0.7799	1029	mustang (incomplete)
-0.7688	1030	foldmason_iter
-0.7688	1030	foldmason_def
-0.7452	1030	muscle5_mega
-0.7133	1027	muscle5 (incomplete)
-0.7098	1027	clustalo (incomplete)
-0.7068	1027	mafft (incomplete)
+0.7799	1029	mustang
+0.7688	1030	foldmason-i
+0.7688	1030	foldmason
+0.7452	1030	muscle-3d
+0.7133	1027	muscle-aa
+0.7098	1027	clustalo
+0.7068	1027	mafft
 0.6993	398	upp2 (incomplete)
-0.6743	1027	muscle3 (incomplete)
 
 method1	compares	method2	gt	lt	tie	P
-usalign	better-than	foldmason_iter	623	66	341	2.03e-91
-foldmason_iter	better-than	muscle5_mega	775	201	54	3.69e-79
-foldmason_def	(unresolved)	foldmason_iter	163	157	710	0.617
-usalign	better-than	muscle5_mega	955	43	32	1.75e-151
-usalign	better-than	foldmason_def	612	68	350	4.61e-90
-foldmason_def	better-than	muscle5_mega	772	206	52	9.02e-77
+usalign	better-than	mustang	584	373	73	2.63e-17
+usalign	better-than	foldmason-i	623	66	341	2.03e-91
+mustang	better-than	foldmason-i	692	278	60	1.11e-43
+usalign	better-than	foldmason	612	68	350	4.61e-90
+mustang	better-than	foldmason	690	280	60	5.21e-43
+foldmason	(unresolved)	foldmason-i	163	157	710	0.617
+usalign	better-than	muscle-3d	955	43	32	1.75e-151
+mustang	better-than	muscle-3d	901	96	33	2.53e-129
+foldmason-i	better-than	muscle-3d	775	201	54	3.69e-79
+foldmason	better-than	muscle-3d	772	206	52	9.02e-77
+usalign	better-than	muscle-aa	949	57	24	1.06e-156
+mustang	better-than	muscle-aa	910	95	25	3.24e-140
+foldmason-i	better-than	muscle-aa	836	154	40	2.65e-120
+foldmason	better-than	muscle-aa	839	152	39	1.85e-120
+muscle-3d	better-than	muscle-aa	701	273	56	3.92e-64
+usalign	better-than	clustalo	928	70	32	6.81e-154
+mustang	better-than	clustalo	894	106	30	2.93e-138
+foldmason-i	better-than	clustalo	802	173	55	1.44e-115
+foldmason	better-than	clustalo	801	174	55	4.9e-116
+muscle-3d	better-than	clustalo	666	320	44	3.85e-55
+clustalo	(unresolved)	muscle-aa	479	447	104	0.092
+usalign	better-than	mafft	945	56	29	1.16e-156
+mustang	better-than	mafft	900	103	27	1.04e-140
+foldmason-i	better-than	mafft	845	142	43	7.05e-129
+foldmason	better-than	mafft	845	140	45	1.19e-127
+muscle-3d	better-than	mafft	720	269	41	1.59e-69
+muscle-aa	better-than	mafft	547	358	125	1.47e-15
+clustalo	better-than	mafft	538	385	107	4.16e-05
+
+
+   homstrad  lddt_mu      usalign      mustang  foldmason-i    foldmason    muscle-3d    muscle-aa     clustalo        mafft
+    usalign   0.7878                  >2.6e-17       >2e-91     >4.6e-90    >1.7e-151    >1.1e-156    >6.8e-154    >1.2e-156
+    mustang   0.7799     <2.6e-17                  >1.1e-43     >5.2e-43    >2.5e-129    >3.2e-140    >2.9e-138      >1e-140
+foldmason-i   0.7688       <2e-91     <1.1e-43                     ~0.62     >3.7e-79    >2.6e-120    >1.4e-115      >7e-129
+  foldmason   0.7688     <4.6e-90     <5.2e-43        ~0.62                    >9e-77    >1.8e-120    >4.9e-116    >1.2e-127
+  muscle-3d   0.7452    <1.7e-151    <2.5e-129     <3.7e-79       <9e-77                  >3.9e-64     >3.9e-55     >1.6e-69
+  muscle-aa   0.7133    <1.1e-156    <3.2e-140    <2.6e-120    <1.8e-120     <3.9e-64                    ~0.092     >1.5e-15
+   clustalo   0.7098    <6.8e-154    <2.9e-138    <1.4e-115    <4.9e-116     <3.9e-55       ~0.092                  >4.2e-05
+      mafft   0.7068    <1.2e-156      <1e-140      <7e-129    <1.2e-127     <1.6e-69     <1.5e-15     <4.2e-05             
+
+
+homstrad	lddt_mu	usalign	mustang	foldmason-i	foldmason	muscle-3d	muscle-aa	clustalo	mafft
+usalign	0.7878		>2.6e-17	>2e-91	>4.6e-90	>1.7e-151	>1.1e-156	>6.8e-154	>1.2e-156
+mustang	0.7799	<2.6e-17		>1.1e-43	>5.2e-43	>2.5e-129	>3.2e-140	>2.9e-138	>1e-140
+foldmason-i	0.7688	<2e-91	<1.1e-43		~0.62	>3.7e-79	>2.6e-120	>1.4e-115	>7e-129
+foldmason	0.7688	<4.6e-90	<5.2e-43	~0.62		>9e-77	>1.8e-120	>4.9e-116	>1.2e-127
+muscle-3d	0.7452	<1.7e-151	<2.5e-129	<3.7e-79	<9e-77		>3.9e-64	>3.9e-55	>1.6e-69
+muscle-aa	0.7133	<1.1e-156	<3.2e-140	<2.6e-120	<1.8e-120	<3.9e-64		~0.092	>1.5e-15
+clustalo	0.7098	<6.8e-154	<2.9e-138	<1.4e-115	<4.9e-116	<3.9e-55	~0.092		>4.2e-05
+mafft	0.7068	<1.2e-156	<1e-140	<7e-129	<1.2e-127	<1.6e-69	<1.5e-15	<4.2e-05	

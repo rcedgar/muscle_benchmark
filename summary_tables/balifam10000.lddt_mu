@@ -1,14 +1,28 @@
 balifam10000 (full, 4 MSAs)
 lddt_mu	n	method
-0.6606	4	muscle5_mega
-0.5927	4	muscle5
+0.6606	4	muscle-3d
+0.5927	4	muscle-aa
 0.5019	4	mafft
-0.3271	4	foldmason_def
+0.3271	4	foldmason
 
 method1	compares	method2	gt	lt	tie	P
-muscle5_mega	(unresolved)	mafft	4	0	0	0.125
-muscle5	(unresolved)	mafft	4	0	0	0.125
-mafft	(unresolved)	foldmason_def	4	0	0	0.125
-muscle5_mega	(unresolved)	muscle5	4	0	0	0.125
-muscle5_mega	(unresolved)	foldmason_def	4	0	0	0.125
-muscle5	(unresolved)	foldmason_def	4	0	0	0.125
+muscle-3d	(unresolved)	muscle-aa	4	0	0	0.125
+muscle-3d	(unresolved)	mafft	4	0	0	0.125
+muscle-aa	(unresolved)	mafft	4	0	0	0.125
+muscle-3d	(unresolved)	foldmason	4	0	0	0.125
+muscle-aa	(unresolved)	foldmason	4	0	0	0.125
+mafft	(unresolved)	foldmason	4	0	0	0.125
+
+
+balifam1000  lddt_mu    muscle-3d    muscle-aa        mafft    foldmason
+  muscle-3d   0.6606                     ~0.12        ~0.12        ~0.12
+  muscle-aa   0.5927        ~0.12                     ~0.12        ~0.12
+      mafft   0.5019        ~0.12        ~0.12                     ~0.12
+  foldmason   0.3271        ~0.12        ~0.12        ~0.12             
+
+
+balifam10000	lddt_mu	muscle-3d	muscle-aa	mafft	foldmason
+muscle-3d	0.6606		~0.12	~0.12	~0.12
+muscle-aa	0.5927	~0.12		~0.12	~0.12
+mafft	0.5019	~0.12	~0.12		~0.12
+foldmason	0.3271	~0.12	~0.12	~0.12	

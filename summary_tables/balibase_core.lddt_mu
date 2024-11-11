@@ -1,0 +1,51 @@
+balibase (full, 197 MSAs)
+lddt_mu	n	method
+0.8508	197	muscle-3d
+0.8403	197	muscle-aa
+0.8376	197	ref
+0.8262	197	mafft
+0.8228	197	clustalo
+0.8217	197	foldmason
+0.8182	197	upp2
+0.8004	197	usalign
+
+method1	compares	method2	gt	lt	tie	P
+muscle-3d	better-than	muscle-aa	135	61	1	2.2e-08
+muscle-3d	better-than	ref	165	32	0	4.46e-17
+muscle-aa	better-than	ref	147	50	0	1.39e-08
+muscle-3d	better-than	mafft	149	47	1	2.27e-12
+muscle-aa	better-than	mafft	118	79	0	4.37e-05
+mafft	better-than	ref	127	68	2	0.0186
+muscle-3d	better-than	clustalo	155	42	0	2.25e-18
+muscle-aa	better-than	clustalo	135	62	0	6.11e-08
+clustalo	(unresolved)	ref	113	78	6	0.24
+mafft	(unresolved)	clustalo	116	79	2	0.0828
+muscle-3d	better-than	foldmason	130	67	0	2.91e-07
+muscle-aa	(unresolved)	foldmason	106	91	0	0.32
+foldmason	better-than	ref	126	71	0	0.00074
+foldmason	(unresolved)	mafft	107	90	0	0.0946
+foldmason	better-than	clustalo	122	75	0	0.000693
+muscle-3d	better-than	upp2	153	41	3	6.48e-16
+muscle-aa	better-than	upp2	133	64	0	5.53e-08
+upp2	(unresolved)	ref	122	74	1	0.206
+mafft	(unresolved)	upp2	104	92	1	0.0577
+clustalo	(unresolved)	upp2	102	94	1	0.637
+foldmason	better-than	upp2	121	74	2	0.000135
+usalign	(unresolved)	muscle-3d	113	84	0	0.68
+usalign	(unresolved)	muscle-aa	124	72	1	0.151
+usalign	better-than	ref	144	51	2	0.000852
+usalign	better-than	mafft	132	63	2	0.00924
+usalign	better-than	clustalo	141	56	0	0.000548
+usalign	better-than	foldmason	125	72	0	0.0196
+usalign	better-than	upp2	138	59	0	0.00134
+
+
+   balibase  lddt_mu    muscle-3d    muscle-aa          ref        mafft     clustalo    foldmason         upp2      usalign
+  muscle-3d   0.8508                  >2.2e-08     >4.5e-17     >2.3e-12     >2.2e-18     >2.9e-07     >6.5e-16        ~0.68
+  muscle-aa   0.8403     <2.2e-08                  >1.4e-08     >4.4e-05     >6.1e-08        ~0.32     >5.5e-08        ~0.15
+        ref   0.8376     <4.5e-17     <1.4e-08                    <0.019        ~0.24     <0.00074        ~0.21     <0.00085
+      mafft   0.8262     <2.3e-12     <4.4e-05       >0.019                    ~0.083       ~0.095       ~0.058      <0.0092
+   clustalo   0.8228     <2.2e-18     <6.1e-08        ~0.24       ~0.083                  <0.00069        ~0.64     <0.00055
+  foldmason   0.8217     <2.9e-07        ~0.32     >0.00074       ~0.095     >0.00069                  >0.00014        <0.02
+       upp2   0.8182     <6.5e-16     <5.5e-08        ~0.21       ~0.058        ~0.64     <0.00014                   <0.0013
+    usalign   0.8004        ~0.68        ~0.15     >0.00085      >0.0092     >0.00055        >0.02      >0.0013             

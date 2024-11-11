@@ -1,0 +1,75 @@
+balibase (full, 197 MSAs)
+lddt_fm	n	method
+0.5074	197	foldmason_iter
+0.4840	197	foldmason_def
+0.4692	197	clustalo
+0.4540	197	muscle5_mega
+0.4362	197	upp2
+0.4292	106	mustang (incomplete)
+0.4290	197	mafft
+0.4248	197	muscle5
+0.3797	197	usalign
+0.2960	89	matt (incomplete)
+0.2641	197	muscle3
+
+method1	compares	method2	gt	lt	tie	P
+foldmason_iter	better-than	foldmason_def	193	0	4	2.02e-33
+foldmason_iter	better-than	clustalo	164	33	0	4.94e-23
+foldmason_def	better-than	clustalo	117	80	0	0.000343
+foldmason_iter	better-than	muscle5_mega	172	25	0	2.07e-27
+foldmason_def	better-than	muscle5_mega	136	61	0	8.94e-12
+clustalo	better-than	muscle5_mega	120	77	0	0.000146
+foldmason_iter	better-than	upp2	190	7	0	1.86e-33
+foldmason_def	better-than	upp2	156	41	0	4.65e-22
+clustalo	better-than	upp2	158	39	0	1.16e-20
+muscle5_mega	better-than	upp2	127	70	0	3.38e-06
+foldmason_iter	better-than	mafft	191	6	0	1.24e-33
+foldmason_def	better-than	mafft	168	29	0	1.5e-26
+clustalo	better-than	mafft	176	21	0	3.13e-29
+muscle5_mega	better-than	mafft	132	65	0	6.42e-09
+upp2	better-than	mafft	113	84	0	0.00955
+foldmason_iter	better-than	muscle5	191	6	0	1.38e-33
+foldmason_def	better-than	muscle5	171	26	0	2.42e-28
+clustalo	better-than	muscle5	165	32	0	1.79e-25
+muscle5_mega	better-than	muscle5	151	46	0	4.94e-18
+upp2	better-than	muscle5	116	81	0	0.00265
+mafft	(unresolved)	muscle5	103	94	0	0.178
+foldmason_iter	better-than	usalign	174	23	0	3.03e-30
+foldmason_def	better-than	usalign	159	38	0	6.04e-25
+clustalo	better-than	usalign	149	48	0	1.68e-17
+muscle5_mega	better-than	usalign	149	48	0	4.32e-17
+upp2	better-than	usalign	133	64	0	9.22e-10
+mafft	better-than	usalign	127	70	0	5.64e-08
+muscle5	better-than	usalign	120	77	0	4.9e-07
+foldmason_iter	better-than	muscle3	197	0	0	4.46e-34
+foldmason_def	better-than	muscle3	197	0	0	4.46e-34
+clustalo	better-than	muscle3	197	0	0	4.46e-34
+muscle5_mega	better-than	muscle3	197	0	0	4.46e-34
+upp2	better-than	muscle3	197	0	0	4.46e-34
+mafft	better-than	muscle3	197	0	0	4.46e-34
+muscle5	better-than	muscle3	195	2	0	9.27e-34
+usalign	better-than	muscle3	165	32	0	2.3e-25
+
+
+   balibase  lddt_fm  foldmason_i  foldmason_d     clustalo  muscle5_meg         upp2        mafft      muscle5      usalign      muscle3
+foldmason_i   0.5074                    >2e-33     >4.9e-23     >2.1e-27     >1.9e-33     >1.2e-33     >1.4e-33       >3e-30     >4.5e-34
+foldmason_d   0.4840       <2e-33                  >0.00034     >8.9e-12     >4.6e-22     >1.5e-26     >2.4e-28       >6e-25     >4.5e-34
+   clustalo   0.4692     <4.9e-23     <0.00034                  >0.00015     >1.2e-20     >3.1e-29     >1.8e-25     >1.7e-17     >4.5e-34
+muscle5_meg   0.4540     <2.1e-27     <8.9e-12     <0.00015                  >3.4e-06     >6.4e-09     >4.9e-18     >4.3e-17     >4.5e-34
+       upp2   0.4362     <1.9e-33     <4.6e-22     <1.2e-20     <3.4e-06                   >0.0096      >0.0026     >9.2e-10     >4.5e-34
+      mafft   0.4290     <1.2e-33     <1.5e-26     <3.1e-29     <6.4e-09      <0.0096                     ~0.18     >5.6e-08     >4.5e-34
+    muscle5   0.4248     <1.4e-33     <2.4e-28     <1.8e-25     <4.9e-18      <0.0026        ~0.18                  >4.9e-07     >9.3e-34
+    usalign   0.3797       <3e-30       <6e-25     <1.7e-17     <4.3e-17     <9.2e-10     <5.6e-08     <4.9e-07                  >2.3e-25
+    muscle3   0.2641     <4.5e-34     <4.5e-34     <4.5e-34     <4.5e-34     <4.5e-34     <4.5e-34     <9.3e-34     <2.3e-25             
+
+
+balibase	lddt_fm	foldmason_iter	foldmason_def	clustalo	muscle5_mega	upp2	mafft	muscle5	usalign	muscle3
+foldmason_iter	0.5074		>2e-33	>4.9e-23	>2.1e-27	>1.9e-33	>1.2e-33	>1.4e-33	>3e-30	>4.5e-34
+foldmason_def	0.4840	<2e-33		>0.00034	>8.9e-12	>4.6e-22	>1.5e-26	>2.4e-28	>6e-25	>4.5e-34
+clustalo	0.4692	<4.9e-23	<0.00034		>0.00015	>1.2e-20	>3.1e-29	>1.8e-25	>1.7e-17	>4.5e-34
+muscle5_mega	0.4540	<2.1e-27	<8.9e-12	<0.00015		>3.4e-06	>6.4e-09	>4.9e-18	>4.3e-17	>4.5e-34
+upp2	0.4362	<1.9e-33	<4.6e-22	<1.2e-20	<3.4e-06		>0.0096	>0.0026	>9.2e-10	>4.5e-34
+mafft	0.4290	<1.2e-33	<1.5e-26	<3.1e-29	<6.4e-09	<0.0096		~0.18	>5.6e-08	>4.5e-34
+muscle5	0.4248	<1.4e-33	<2.4e-28	<1.8e-25	<4.9e-18	<0.0026	~0.18		>4.9e-07	>9.3e-34
+usalign	0.3797	<3e-30	<6e-25	<1.7e-17	<4.3e-17	<9.2e-10	<5.6e-08	<4.9e-07		>2.3e-25
+muscle3	0.2641	<4.5e-34	<4.5e-34	<4.5e-34	<4.5e-34	<4.5e-34	<4.5e-34	<9.3e-34	<2.3e-25	

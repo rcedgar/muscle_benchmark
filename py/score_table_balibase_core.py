@@ -15,18 +15,17 @@ def rename(s):
 		return "foldmason-i"
 	return s
 
-f = open("../results/score_table.tsv", "w")
+f = open("../results/score_table_balibase_core.tsv", "w")
 
 int_dir = "/z/int/muscle_benchmark/"
 int_dir2 = "/z/int/muscle_benchmark2/"
 res_dir = "/mnt/c/src/muscle_benchmark/"
 bench_algos_dir = res_dir + "bench_algos/"
 accs_dir = res_dir + "accs/"
-qscores_dir = int_dir2 + "qscores/"
-msta_scores_dir = int_dir2 + "msta_scores/"
+msta_scores_dir = int_dir2 + "msta_balibase_core/"
 
 # benchmarks
-bs = [ "balibase", "homstrad", "balifam100", "balifam1000", "balifam10000" ]
+bs = [ "balibase" ]
 
 def read_lines(fn):
 	return [ line.strip() for line in open(fn) ]
@@ -36,36 +35,13 @@ def read_dir(path):
 	return [fn for fn in listdir(path) if isfile(join(path, fn))]
 
 '''
-set=BB11014     q=0.8040        tc=0.6895
-set=BB11016     q=0.8097        tc=0.5545
-set=BB11018     q=0.7292        tc=0.5248
-'''
-def read_qscores(b, algo):
-	try:
-		f = open(qscores_dir + b + "/" + algo)
-	except:
-		return {}
-	acc2tc = {}
-	for line in f:
-		if not line.startswith("set="):
-			continue
-		flds = line.strip().split("\t")
-		acc = flds[0].replace("set=", "")
-		if flds[1] == "NOMATCH":
-			tc = 0
-		else:
-			tc = float(flds[2][3:])
-		acc2tc[acc] = tc
-	return acc2tc
-
-'''
 aln=z:/int/muscle_benchmark/output_msas/balibase/clustalo/BB11001  Z=5.483  LDDT_mu=0.7120
 '''
-def read_msta_scores(b, algo):
+def read_msta_scores(algo):
 	acc2z = {}
 	acc2lddt_mu = {}
 	try:
-		f = open(msta_scores_dir + b + "/" + algo)
+		f = open(msta_scores_dir + algo)
 	except:
 		return {}, {}
 	for line in f:
@@ -96,28 +72,22 @@ def get_str(dict, key, fmt, missing):
 for b in bs:
 	accs = read_lines(accs_dir + b)
 	algos = read_lines(bench_algos_dir + b)
+	algos.append("ref")
 	metric_to_NA_count = {}
 	metric_to_OK_count = {}
 
 	for algo in algos:
 		sys.stderr.write(b + " " + algo + "\n")
 
-		metrics = [ "tc", "z", "lddt_mu" ]
+		metrics = [ "z", "lddt_mu" ]
 		for metric in metrics:
 			metric_to_NA_count[metric] = 0
 			metric_to_OK_count[metric] = 0
 
-		acc2tc = read_qscores(b, algo)
-		acc2z, acc2lddt_mu = read_msta_scores(b, algo)
+		acc2z, acc2lddt_mu = read_msta_scores(algo)
 		for acc in accs:
-			stc = get_str(acc2tc, acc, "%.4f", "NA")
 			sz = get_str(acc2z, acc, "%.3f", "NA")
 			slddt_mu = get_str(acc2lddt_mu, acc, "%.4f", "NA")
-
-			if stc == "NA":
-				metric_to_NA_count["tc"] += 1
-			else:
-				metric_to_OK_count["tc"] += 1
 
 			if sz == "NA":
 				metric_to_NA_count["z"] += 1
@@ -132,7 +102,6 @@ for b in bs:
 			s = "bench=" + b
 			s += "\talgo=" + rename(algo)
 			s += "\tacc=" + acc
-			s += "\ttc=" + stc
 			s += "\tz=" + sz 
 			s += "\tlddt_mu=" + slddt_mu
 			f.write(s + "\n")

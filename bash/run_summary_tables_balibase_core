@@ -1,0 +1,8 @@
+mkdir -p ../summary_tables
+for metric in z lddt_mu
+do
+	../py/summary_table_balibase_core.py $metric \
+	  > ../summary_tables/balibase_core.$metric
+done
+
+ls -lh ../summary_tables/*core*

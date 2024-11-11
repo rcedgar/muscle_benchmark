@@ -2,8 +2,17 @@
 
 import sys
 
-bs = [ "balibase", "homstrad", "balifam100", "balifam1000", "balifam10000" ]
-metrics = [ "tc", "z", "lddt_mu" ]
+if sys.argv[1] == "lddt_fm":
+	print("HELLO")
+	score_table_fn = "../results/balibase_msa2lddt_score_table.tsv"
+	bs = [ "balibase" ]
+	metrics = [ "lddt_fm" ]
+	SORT_ALGO = "lddt_fm"
+else:
+	score_table_fn = "../results/score_table.tsv"
+	bs = [ "balibase", "homstrad", "balifam100", "balifam1000", "balifam10000" ]
+	metrics = [ "tc", "z", "lddt_mu" ]
+	SORT_ALGO = "lddt_mu"
 
 # make dict from tab-separated fields name=value
 def line2dict(line):
@@ -24,7 +33,7 @@ for b in bs:
 baam2value = {}
 
 # bench=balibase  algo=clustalo   acc=BB11001     tc=0.9123       z=5.483 lddt_mu=0.7120
-for line in open("../results/score_table.tsv"):
+for line in open(score_table_fn):
 	d = line2dict(line)
 	b = d.get("bench")
 	algo = d.get("algo")
@@ -76,7 +85,7 @@ for b in bs:
 				metric2algo2avg[metric][algo] = 0
 			else:
 				metric2algo2avg[metric][algo] = sum(values)/n
-	sorted_algos = sorted(metric2algo2avg["lddt_mu"].items(), key=get_value, reverse=True)
+	sorted_algos = sorted(metric2algo2avg[SORT_ALGO].items(), key=get_value, reverse=True)
 	print("")
 	nr_accs = len(accs)
 	print("=== %s (%d) ===" % (b, nr_accs))

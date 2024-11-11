@@ -1,0 +1,1 @@
+./summary_table.py balibase lddt_fm ../accs/balibase > ../summary_tables/balibase.lddt_fm

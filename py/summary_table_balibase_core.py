@@ -3,14 +3,11 @@
 import sys
 from scipy.stats import wilcoxon
 
-bench = sys.argv[1]
-metric_name = sys.argv[2]
-accs_fn = sys.argv[3]
+bench = "balibase"
+accs_fn = "../accs/balibase"
+metric_name = sys.argv[1]
 
-if metric_name == "lddt_fm":
-	fn = "../results/balibase_msa2lddt_score_table.tsv"
-else:
-	fn = "../results/score_table.tsv"
+fn = "../results/score_table_balibase_core.tsv"
 
 f = open(fn)
 
@@ -106,7 +103,7 @@ for algo, n in sorted_algos:
 	s = "%.4f" % algo2avg[algo]
 	s += "\t%d" % n
 	s += "\t" + algo
-	if n + 3 < N:
+	if n < N:
 		s += " (incomplete)"
 	else:
 		sorted_algo_list.append(algo)
@@ -116,15 +113,15 @@ algo_list = []
 vs = []
 for algo in sorted_algo_list:
 	v = []
-	nr_has_none = 0
+	has_none = False
 	for acc in accs:
 		metric = algo2acc2metric[algo].get(acc)
 		if metric is None:
-			nr_has_none += 1
-			v.append(0)
-		else:
-			v.append(metric)
-	if nr_has_none > 3:
+			assert False
+			has_none = True
+			break
+		v.append(metric)
+	if has_none:
 		continue
 	algo_list.append(algo)
 	assert len(v) == N
@@ -228,29 +225,4 @@ for i in range(nr_algos):
 			P = Pmx[algoi][algoj]
 			t = cmp + "%.2g" % P
 			s += "  " + NAME_FMT % t
-	print(s)
-
-NAME_FMT = "%s"
-
-print()
-print()
-s = NAME_FMT % bench
-s += "\t%s" % metric_name
-for i in range(0, nr_algos):
-	s += "\t" + NAME_FMT % algo_list[i]
-print(s)
-for i in range(nr_algos):
-	algoi = algo_list[i]
-	avg = algo2avg[algoi]
-	s = NAME_FMT % algoi
-	s += "\t%.4f" % avg
-	for j in range(nr_algos):
-		if j == i:
-			s += "\t" + NAME_FMT % ""
-		else:
-			algoj = algo_list[j]
-			cmp = cmpmx[algoi][algoj]
-			P = Pmx[algoi][algoj]
-			t = cmp + "%.2g" % P
-			s += "\t" + NAME_FMT % t
 	print(s)

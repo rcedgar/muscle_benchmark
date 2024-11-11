@@ -1,25 +1,35 @@
 balifam1000 (full, 10 MSAs)
 z	n	method
-9.2358	10	muscle5_mega
-7.1447	10	muscle5
+9.2358	10	muscle-3d
+7.1447	10	muscle-aa
 5.7024	10	clustalo
 4.1883	10	mafft
-3.7485	10	foldmason_def
--3.1533	10	muscle3
+3.7485	10	foldmason
 
 method1	compares	method2	gt	lt	tie	P
-muscle5	better-than	mafft	10	0	0	0.00195
-mafft	better-than	muscle3	10	0	0	0.00195
-foldmason_def	(unresolved)	mafft	5	5	0	0.557
-muscle5_mega	better-than	mafft	10	0	0	0.00195
+muscle-3d	better-than	muscle-aa	10	0	0	0.00195
+muscle-3d	better-than	clustalo	10	0	0	0.00195
+muscle-aa	(unresolved)	clustalo	6	4	0	0.193
+muscle-3d	better-than	mafft	10	0	0	0.00195
+muscle-aa	better-than	mafft	10	0	0	0.00195
 clustalo	better-than	mafft	8	2	0	0.0273
-muscle5	better-than	muscle3	10	0	0	0.00195
-muscle5	better-than	foldmason_def	9	1	0	0.00586
-muscle5_mega	better-than	muscle5	10	0	0	0.00195
-muscle5	(unresolved)	clustalo	6	4	0	0.193
-foldmason_def	better-than	muscle3	10	0	0	0.00195
-muscle5_mega	better-than	muscle3	10	0	0	0.00195
-clustalo	better-than	muscle3	10	0	0	0.00195
-muscle5_mega	better-than	foldmason_def	10	0	0	0.00195
-clustalo	better-than	foldmason_def	8	2	0	0.0195
-muscle5_mega	better-than	clustalo	10	0	0	0.00195
+muscle-3d	better-than	foldmason	10	0	0	0.00195
+muscle-aa	better-than	foldmason	9	1	0	0.00586
+clustalo	better-than	foldmason	8	2	0	0.0195
+mafft	(unresolved)	foldmason	5	5	0	0.557
+
+
+balifam1000        z    muscle-3d    muscle-aa     clustalo        mafft    foldmason
+  muscle-3d   9.2358                    >0.002       >0.002       >0.002       >0.002
+  muscle-aa   7.1447       <0.002                     ~0.19       >0.002      >0.0059
+   clustalo   5.7024       <0.002        ~0.19                    >0.027        >0.02
+      mafft   4.1883       <0.002       <0.002       <0.027                     ~0.56
+  foldmason   3.7485       <0.002      <0.0059        <0.02        ~0.56             
+
+
+balifam1000	z	muscle-3d	muscle-aa	clustalo	mafft	foldmason
+muscle-3d	9.2358		>0.002	>0.002	>0.002	>0.002
+muscle-aa	7.1447	<0.002		~0.19	>0.002	>0.0059
+clustalo	5.7024	<0.002	~0.19		>0.027	>0.02
+mafft	4.1883	<0.002	<0.002	<0.027		~0.56
+foldmason	3.7485	<0.002	<0.0059	<0.02	~0.56	

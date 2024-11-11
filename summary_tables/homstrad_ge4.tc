@@ -1,0 +1,73 @@
+homstrad (full, 233 MSAs)
+tc	n	method
+0.7580	233	mustang
+0.7431	233	usalign
+0.7410	233	muscle-3d
+0.7062	233	foldmason
+0.7037	233	foldmason-i
+0.6859	233	muscle-aa
+0.6710	233	mafft
+0.6596	233	clustalo
+0.6277	233	upp2
+
+method1	compares	method2	gt	lt	tie	P
+mustang	better-than	usalign	125	95	13	0.0126
+mustang	better-than	muscle-3d	129	97	7	0.00472
+usalign	(unresolved)	muscle-3d	117	106	10	0.277
+mustang	better-than	foldmason	174	53	6	1.63e-12
+usalign	better-than	foldmason	165	58	10	1.31e-11
+muscle-3d	better-than	foldmason	148	75	10	7.72e-08
+mustang	better-than	foldmason-i	172	55	6	3.6e-14
+usalign	better-than	foldmason-i	168	59	6	3.64e-12
+muscle-3d	better-than	foldmason-i	148	69	16	2.9e-09
+foldmason	better-than	foldmason-i	108	54	71	0.0434
+mustang	better-than	muscle-aa	153	71	9	6.15e-12
+usalign	better-than	muscle-aa	147	79	7	6.13e-08
+muscle-3d	better-than	muscle-aa	155	64	14	1.02e-12
+foldmason	(unresolved)	muscle-aa	113	108	12	0.111
+muscle-aa	(unresolved)	foldmason-i	119	106	8	0.27
+mustang	better-than	mafft	157	66	10	1.05e-13
+usalign	better-than	mafft	153	75	5	3.39e-09
+muscle-3d	better-than	mafft	159	65	9	1.31e-13
+foldmason	better-than	mafft	132	91	10	0.000746
+foldmason-i	better-than	mafft	123	99	11	0.00752
+muscle-aa	better-than	mafft	133	85	15	0.00214
+mustang	better-than	clustalo	168	61	4	1.29e-15
+usalign	better-than	clustalo	158	66	9	4.57e-12
+muscle-3d	better-than	clustalo	164	59	10	5.63e-17
+foldmason	better-than	clustalo	127	95	11	3.18e-05
+foldmason-i	better-than	clustalo	125	99	9	0.000513
+muscle-aa	better-than	clustalo	120	96	17	0.000304
+mafft	(unresolved)	clustalo	107	99	27	0.139
+mustang	better-than	upp2	180	47	6	3.34e-22
+usalign	better-than	upp2	175	53	5	2.51e-17
+muscle-3d	better-than	upp2	186	38	9	4.31e-25
+foldmason	better-than	upp2	157	71	5	1.71e-13
+foldmason-i	better-than	upp2	153	75	5	7.32e-13
+muscle-aa	better-than	upp2	176	43	14	3.35e-19
+mafft	better-than	upp2	162	51	20	3.85e-15
+clustalo	better-than	upp2	162	55	16	5.57e-11
+
+
+   homstrad       tc      mustang      usalign    muscle-3d    foldmason  foldmason-i    muscle-aa        mafft     clustalo         upp2
+    mustang   0.7580                    >0.013      >0.0047     >1.6e-12     >3.6e-14     >6.1e-12       >1e-13     >1.3e-15     >3.3e-22
+    usalign   0.7431       <0.013                     ~0.28     >1.3e-11     >3.6e-12     >6.1e-08     >3.4e-09     >4.6e-12     >2.5e-17
+  muscle-3d   0.7410      <0.0047        ~0.28                  >7.7e-08     >2.9e-09       >1e-12     >1.3e-13     >5.6e-17     >4.3e-25
+  foldmason   0.7062     <1.6e-12     <1.3e-11     <7.7e-08                    >0.043        ~0.11     >0.00075     >3.2e-05     >1.7e-13
+foldmason-i   0.7037     <3.6e-14     <3.6e-12     <2.9e-09       <0.043                     ~0.27      >0.0075     >0.00051     >7.3e-13
+  muscle-aa   0.6859     <6.1e-12     <6.1e-08       <1e-12        ~0.11        ~0.27                   >0.0021      >0.0003     >3.4e-19
+      mafft   0.6710       <1e-13     <3.4e-09     <1.3e-13     <0.00075      <0.0075      <0.0021                     ~0.14     >3.9e-15
+   clustalo   0.6596     <1.3e-15     <4.6e-12     <5.6e-17     <3.2e-05     <0.00051      <0.0003        ~0.14                  >5.6e-11
+       upp2   0.6277     <3.3e-22     <2.5e-17     <4.3e-25     <1.7e-13     <7.3e-13     <3.4e-19     <3.9e-15     <5.6e-11             
+
+
+homstrad	tc	mustang	usalign	muscle-3d	foldmason	foldmason-i	muscle-aa	mafft	clustalo	upp2
+mustang	0.7580		>0.013	>0.0047	>1.6e-12	>3.6e-14	>6.1e-12	>1e-13	>1.3e-15	>3.3e-22
+usalign	0.7431	<0.013		~0.28	>1.3e-11	>3.6e-12	>6.1e-08	>3.4e-09	>4.6e-12	>2.5e-17
+muscle-3d	0.7410	<0.0047	~0.28		>7.7e-08	>2.9e-09	>1e-12	>1.3e-13	>5.6e-17	>4.3e-25
+foldmason	0.7062	<1.6e-12	<1.3e-11	<7.7e-08		>0.043	~0.11	>0.00075	>3.2e-05	>1.7e-13
+foldmason-i	0.7037	<3.6e-14	<3.6e-12	<2.9e-09	<0.043		~0.27	>0.0075	>0.00051	>7.3e-13
+muscle-aa	0.6859	<6.1e-12	<6.1e-08	<1e-12	~0.11	~0.27		>0.0021	>0.0003	>3.4e-19
+mafft	0.6710	<1e-13	<3.4e-09	<1.3e-13	<0.00075	<0.0075	<0.0021		~0.14	>3.9e-15
+clustalo	0.6596	<1.3e-15	<4.6e-12	<5.6e-17	<3.2e-05	<0.00051	<0.0003	~0.14		>5.6e-11
+upp2	0.6277	<3.3e-22	<2.5e-17	<4.3e-25	<1.7e-13	<7.3e-13	<3.4e-19	<3.9e-15	<5.6e-11	
